@@ -52,9 +52,110 @@ document.write(+ a);
 <h2>Precedencia de Operadores Aritméticos</h2>
 <script>
 
-document.write(5+10/2*5-3);
+document.write();
+</script>
+
+Parênteses<br>
+Exponenciação<br>
+Multiplicação<br>
+divisão<br>
+Adicção<br>
+Subtração<br>
+
+Obs. Exceção a regra quando multiplicação e divisão vier junto resolver o que vier primeiro
+
+<h2>Operadores de comparação ou Relacionais</h2>
+<p>Compara dois valores e retorna um valor Boleano como verdadeiro(True) ou falso(False)</p>
+
+> Maior que<br>
+< Menor que<br>
+>= Maior ou igual a<br>
+<= Menor ou igual a<br>
+= Atribuição<br>
+== Igual a<br>
+=== Igual a "Valor e tipo" exemplo a === a (verdadeiro) a === A (Falso)<br>
+! Negação<br>
+!= Diferente de<br>
+!== Difrente de "Valor e tipo"<br>
+
+<script>
+document.write( 10 === "10");
 
 </script>
+
+<h2>Operadores lógicos</h2>
+
+&& AND Operadores recebe dois operandos e retorna veradeiro somente se ambos os operadores forem verdadeiros.<br>
+|| OR Operador retorna verdadeiro se os dois operandos forem verdadeiros. <br>
+! NOT Operador de negação pe um operado unário, ou seja, opera sobre apenas um operando. Ele nega e inverte o valor
+lógico do operando.
+
+<h2>Precedência de Operadores Lógicos</h2>
+! NOT<br>
+&& AND<br>
+|| OR<br>
+
+<h2>Operador de String</h2>
++ Concataneção<br>
+, Detonar ou Explodir<br>
+
+<h2>Boolean</h2>
+<p>O tipo bolean é uma contração de um operador de atribuição e duas expressões lógicas</p>
+
+<script>
+if(3 >= 3){
+    document.write("E Maior")
+}else{
+    document.write("E Menor")
+};
+
+</script>
+
+<h3>Exercício</h3>
+<p>Criar um algoritmo para calcular o valor final de uma compra, s eo valor for superior, será aplicado um desconto de 10%.
+    O resultado deverá exibir o valor atualizado
+</p>
+
+<script>
+valor = 360;
+porcentagem = 33;
+desconto = valor*porcentagem/100;
+ValorFinal = valor - desconto;
+
+if(valor > 100){
+    document.write("Preço final com desconto:"+ ValorFinal)
+}else(document.write("Preço final sem desconto:"+ valor))
+
+</script>
+<br><br>
+
+<script>
+/*
+    var qtde = 3;
+    var valorUnit = 50;
+    var total = qtde * valorUnit;
+    var desc = 0.1;
+    var criterio = 100;
+    var vf = total - (total * desc);
+     
+    if(total > criterio){
+    document.write(vf);
+    } else{
+    document.write(total);
+    };
+*/
+    var qtde = 3;
+    var vu =50;
+
+    if((qtde * vu) > 100){
+        document.write((qtde * vu) - ((qtde * vu)*0.1));
+    }else{
+        document.write((qtde * vu));
+    };
+</script>
+
+</body>
+</html>
 
 
 
