@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Variáveis - Lógica com JS</title>
+</head>
+<body>
+<h1>Variáveis - Lógica com JS</h1>
+
+Variáveis armazenam dados temporários.<br><br><br>
+
+<h2>Declaração de variáveis</h2>
+Existem 3 maneiras de declarar uma variável: var, let e const. <br><br>
+
+VAr tem o escopo global ou de função e pode ser atualizado frequentemente e até antes de sua
+declaração, var é um modo de declaração tradicional.<br><br>
+
+LET e CONST tem o escopo de bloco local.<br><br>
+    
+As variáveis com var são inicializadas em underfined, as variáveis com let e const não são 
+inicializadas.<br><br>
+
+<h2>Nomes das variáveis</h2>
+
+O nome das variáveis possuem regras para sua declaração.<br><br>
+
+JavaScript é uma linguagem case sensitive<br>
+Não pode conter caractere<br>
+Não pode iniciar com números<br>
+Não pode conter espaço<br>
+Pode iniciar apenas com o caractere _underline<br>
+Não poder ser com nomes de palavras reservadas de linguagem<br><br>
+
+<h2>Palavras Reservardas do JS</h2>
+
+Palavras chaves são inderficadores pré reservado, como por exemplo os comandos de linguagem 
+programação.<br><br>
+
+Exemplos de palavras reservadas: abstrat, byte, int, import, boolean, default, char, do, for,
+goto, case, continue, delete, etc...<br><br>
+
+<h2>Variável composta ou Vetor</h2>
+Vetor é um tipo de estrutura de dados, onde a variável consegue armazenar simultaneamente
+diferente valores de um mesmo tipo.<br><br>
+
+Assim, vetor é uma variável composta, homogênea e unidimensional.<br><br>
+
+Em programação, as estruturas de dados são uma forma coerente e racional de organizar os dados otimizar
+o seu uso. Um vetor unidimencional, ou array, é uma forma coerente de racional 
+de organizar os dados e otimizar o seu uso.<br><br>
+
+Um vetor unidimencional, ou array, é uma das estruturas de dados mais comuns a serem aplicadas
+no desenvolvimentos de um algoritmo e pode ser cisiderado uma sequencia de posições de memória
+que é usadas par aarmazar um conjunto de dados do mesmo tipo e usado no mesmo nome.<br><br>
+
+Para acessar cada infromação armazenada, separadamente, usa-se um índice que é represensentado uma
+variável inteira. Esssas informações são chamadas de elementos do vetor.<br><br>
+
+Exemplo:<br><br>
+
+notas = [5, 8, 10, 9];
+
+<h2>Tipos de dados JS - Data Types</h2>
+
+null - Não valor, ou inexistênte de valor associado auma variável.<br><br>
+
+underfined - Conteúdo de variável não iniciado<br><br>
+
+boolean - verdadeiro(true) ou falso (false)<br><br>
+
+string - para uma sequencia de zeros e caracteres, normalmente repsenta textos<br><br>
+
+number - Números inteiros e flutuantes<br><br>
+
+NaN - Not a number, números inválidos<br><br>
+
+object - Para coleção de propriedades<br><br>
+
+symbol - Obsoletos usado para objetos<br><br><br><br>
+
+Para descobrir o tipo de dados usamos o typeof. <br><br>
+Exemplo:<br>
+<script>
+//document.write(typeof(10));
+
+//var nome = prompt("Qual e seu nome?");
+//var idade = prompt("Qual e sua idade")
+//alert("Bem vindo, " +nome+ " Sua idade e "+idade);
+</script>
+
+<h2>Convertendo</h2>
+O JS possui funções de conversão de string para number.<br><br>
+<script>
+var textoInteiro = "10.1";
+var numInteiro = 10;
+document.write(textoInteiro * numInteiro, "<br>");
+
+var inteiro = parseInt(textoInteiro);
+document.write(inteiro + numInteiro, "<br>");
+
+var textoFloat = "10.22";
+var Float = parseFloat(textoFloat);
+document.write(Float, "<br>");
+
+//Definir casas decimais, ou digitos.
+var decimais = Float.toFixed(5);
+document.write(decimais);
+</script>
+
+<h2>Conversão entre tipos de dados </h2>
+O parseFloat() analisa um valor como string e retorna como número. Se não puder ser convertido,
+NaN será retornado.<br><br>
+
+<script>
+/*
+var n1 = prompt("Digite um número:");
+
+n1 = parseFloat(n1);
+
+var n2 = prompt("Digite outro numero");
+
+n2 = parseFloat(n2);
+
+alert(typeof(n1));
+
+document.write(n1 + n2);
+*/
+</script>
+
+<h2>Replace / Substituir</h2>
+<script>
+/*
+var frase = "A palavra deve ser substituída.";
+
+document.write(frase,"<br>");
+
+frase = frase.replace("palavra", "frase" );
+document.write(frase);
+*/
+//Inserir um valor decimal com ponto
+var valor = parseFloat(prompt("Digite um valor").replace(",","."));
+
+document.write(valor * 3, "<br>");
+
+//Converter com sepador de milhar R$
+
+valor = valor.toFixed(2);
+
+document.write("R$ "+ valor.toLocaleString("pt-BR"));
+
+
+</script>
+
+
+
+</body>
+</html>
