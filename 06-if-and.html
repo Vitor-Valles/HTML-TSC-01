@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+    if(10 > 1 && 10 > 15){
+        document.write("Ambos são maiores");} 
+    else{
+        document.write("Resultado diferente");
+    };
+    */
+    //Entrada e tratamento de dados inseridos pelo usuário
+    var n1 = parseFloat(prompt("Digite a nota do primeiro trimestre").replace(",","."));
+    var n2 = parseFloat(prompt("Digite a nota do segundo trimestre").replace(",","."));
+    var n3 = parseFloat(prompt("Digite a nota do terceiro trimestre").replace(",","."));
+    var n4 = parseFloat(prompt("Digite a nota do quarto trimestre").replace(",","."));
+        
+    
+    /*
+    var n1 = parseInt(n1);
+    var n2 = parseInt(n2);
+    var n3 = parseInt(n3);
+    var n4 = parseInt(n4);
+    */
+        
+    //Conta para tirar média
+    var resultado = (n1+n2+n3+n4)/4;
+        
+    //Tratamento para mostrar para o usuário "," no lugar de "."
+    var resultadoF = resultado.toFixed(1).replace(".", ",");
+        
+    //Condicionais para ver se o estudande foi aprovado
+    
+    if(resultado > 5 && n1 > 0 && n2 > 0 && n3 > 0 && n4 > 0){
+    document.write(" Por tanto, aprovado"+ resultadoF);
+    }
+    else if (resultado == 5 && n1 > 0 && n2 > 0 && n3 > 0 && n4 > 0)
+    document.write(" Por tanto, você está de recuperação"+ resultadoF);
+    else{
+    document.write(" Por tanto, reprovado"+ resultadoF);
+    };
+
+</script>
+
+
+</body>
+</html>

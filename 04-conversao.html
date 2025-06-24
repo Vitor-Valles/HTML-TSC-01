@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão - Lógica com JS</title>
+</head>
+<body>
+    <h1>Conversão - Lógica com JS</h1>
+
+<h2>Tipos de dados</h2>
+Os tupos de dados em JavaScript são: string, number e boolean.
+
+<h2>Number</h2>
+Este tipo realiza operações aritiméticas com maior facilidade, pois todas as conversões necessárias sõa realizados automaticamente pelo interpretador/browser.
+
+<h2>Objeto String Maiúsculo</h2>
+A conversão de caias e uma string pemite-nos converter todo o seu conteúdo em letras grandes e pequenas. <br>
+<script>
+var a = "Texto em Maiúsculo";
+var b = "Texto em Minúsculo";
+
+a = a.toUpperCase();
+b = b.toLowerCase();
+
+
+document.write(a,b);
+</script>
+
+<h2>Convertendo</h2>
+O JS possui funções de conversão de string para number.<br>
+
+<script>
+var textoInteiro = "10.1";
+var numInteiro = 10;
+document.write(textoInteiro * numInteiro, "<br><br>");
+
+var inteiro = parseInt(textoInteiro);
+document.write(inteiro, "<br><br>");
+
+var textoFloat = "10.22";
+var Float = parseFloat(textoFloat).toFixed(1);
+document.write(Float);
+
+</script>
+
+
+
+
+</body>
+</html>
