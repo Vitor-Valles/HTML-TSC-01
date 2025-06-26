@@ -15,35 +15,32 @@
     };
     */
     //Entrada e tratamento de dados inseridos pelo usuário
-    var n1 = parseFloat(prompt("Digite a nota do primeiro trimestre").replace(",","."));
-    var n2 = parseFloat(prompt("Digite a nota do segundo trimestre").replace(",","."));
-    var n3 = parseFloat(prompt("Digite a nota do terceiro trimestre").replace(",","."));
-    var n4 = parseFloat(prompt("Digite a nota do quarto trimestre").replace(",","."));
-        
-    
-    /*
-    var n1 = parseInt(n1);
-    var n2 = parseInt(n2);
-    var n3 = parseInt(n3);
-    var n4 = parseInt(n4);
-    */
-        
-    //Conta para tirar média
-    var resultado = (n1+n2+n3+n4)/4;
-        
-    //Tratamento para mostrar para o usuário "," no lugar de "."
-    var resultadoF = resultado.toFixed(1).replace(".", ",");
-        
-    //Condicionais para ver se o estudande foi aprovado
-    
-    if(resultadoF > 5 || n1 == 0 || n2 == 0 || n3 == 0 || n4 == 0){
-        document.write (replace("<br><br> Você foi aprovado com a média:"+ resultadoF));
+    var n1 = parseFloat(prompt("Digite a nota do primeiro trimestre").replace(",", "."));
+    var n2 = parseFloat(prompt("Digite a nota do segundo trimestre").replace(",", "."));
+    var n3 = parseFloat(prompt("Digite a nota do terceiro trimestre").replace(",", "."));
+    var n4 = parseFloat(prompt("Digite a nota do quarto trimestre").replace(",", "."));
+
+    // Cálculo da média
+    var resultado = (n1 + n2 + n3 + n4) / 4;
+
+    // Comparações usando o número (resultado)
+    if (n1 == 0 || n2 == 0 || n3 == 0 || n4 == 0) {
+        document.write("Reprovado");
     }
-    else if(resultadoF == 5  || n1 == 0 || n2 == 0 || n3 == 0 || n4 == 0){
-        document.write("<br><br> Você esta em recuperação com a média:"+ resultadoF);
-    }else if(resultadoF < 5 || n1 == 0 || n2 == 0 || n3 == 0 || n4 == 0){
-        document.write("<br><br> Você foi reprovado com a média:"+ resultadoF);
+    else if (resultado > 5) {
+        var resultadoF = resultado.toFixed(1).replace(".", ",");
+        document.write("<br><br>Você foi aprovado com a média: " + resultado.toFixed(1).replace(".", ","));
     }
+    else if (resultado == 5) {
+        var resultadoF = resultado.toFixed(1).replace(".", ",");
+        document.write("<br><br>Você está em recuperação com a média: " + resultado.toFixed(1).replace(".", ","));
+    }
+    else if (resultado < 5) {
+        var resultadoF = resultado.toFixed(1).replace(".", ",");
+        document.write("<br><br>Você foi reprovado com a média: " + resultado.toFixed(1).replace(".", ","));
+    }
+
+
 
 
 </script>
