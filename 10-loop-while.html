@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocos de repetição While</title>
+</head>
+<body>
+    
+    <h1>Blocos de repetição While</h1>
+Muitas vezes precisamos executar um trecho do código repetidas vezes até que ela seja atingida o seu objetivo de condição verdadeira.
+While, condicional de loop. Repite a condição EQUANTO "WHILE" for verdadeiro.
+<br>
+Sintaxe: While(){};
+<br><br>
+
+<script>
+/*
+var n = 0;
+while(n <= 1000){
+    document.write(n + "<br>");
+    n++;
+};
+*/
+
+//validar "Forçar" para a resposta desejada
+
+/*
+var respondaSim = prompt("Digite sim");
+
+respondaSim = respondaSim.toLowerCase();
+
+while(respondaSim != "sim"){
+    
+    respondaSim = prompt("Digite sim");
+    respondaSim = respondaSim.toLowerCase();
+};
+
+alert("Você respondeu corretamente");
+*/
+
+//Fazer uma tabuada até o 10
+var numero = parseInt(prompt("Digite um número"));
+
+var multiplicador = 1;
+
+while(multiplicador <= 10000 ){
+    document.write(numero + " X " + multiplicador + " = " + (numero * multiplicador) + "<br>");
+    multiplicador++;
+}
+
+//document.write(numero + " X 1 = " + (numero * 1) + "<br>");
+
+
+
+</script>
+</body>
+</html>

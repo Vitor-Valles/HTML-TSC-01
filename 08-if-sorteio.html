@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Sorteio</title>
+</head>
+<body>
+    <h1>IF Sorteio</h1>
+<script>
+//Fazer o jogador 1 digita um número
+numero1 = parseInt(prompt("Jogador 1 digite um número: "));
+
+
+//Fazer o jagador 2 digitar outro número
+numero2 = parseInt(prompt("Jogador 2 digite um número: "));
+
+//Se os números forem iguais, exibir a mensagem de empate
+
+if(numero1 == numero2){
+    document.write("Empate:");
+}else{
+
+    resultadoSorteio = parseInt(Math.random()*2);
+        
+    alert("Número sortedo: "+resultadoSorteio);
+    if(resultadoSorteio == 0 ){
+        if(numero1 < numero2){
+            alert("Jogador 1, você ganhou");
+        }else{
+            alert("Jogador 2, você ganhou");
+        };
+    }else{
+    if(resultadoSorteio == 1){
+        if(numero1 > numero2){
+            alert("Jogador 1, você ganhou");
+        }else{
+            alert("Jogador 2 você ganhou");
+        };
+    };
+};
+};
+
+//Sortear número entre 0 e 1
+
+
+//Se o número sorteado for 0 ganha o jogador que que escolheu o menor número
+//Se o número sorteado for 1 ganha o jogador que que escolheu o maior número
+
+
+
+</script>
+
+
+</body>
+</html>
