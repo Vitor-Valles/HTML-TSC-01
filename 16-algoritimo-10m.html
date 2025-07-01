@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atingir 10 metros</title>
+</head>
+<body>
+    <h1>Atingir 10 metros</h1>
+
+<p>Desenvolver um algoritimo para calcular a situação problema:</p>
+<p>Quantos dias uma lesma leva para subir uma parede de 10m. Considerando que sobe 2m durante o dia e escorrega 1m a noite.</p>
+
+<script>
+
+var metro = 20;
+
+var altura = 0;
+
+var dias = 0;
+while(altura < metro){
+    dias++
+    altura += 2;
+if (altura < metro){
+        altura -= 1;
+    }
+    document.write("Dia "+ dias + " Subiu "+ altura +"<br><br>");
+    
+    
+}
+
+</script>
+
+
+
+
+
+</body>
+</html>

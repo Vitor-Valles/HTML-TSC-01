@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função para calculadora</title>
+</head>
+<body>
+    <h1>Função para calculadora</h1>
+
+<button onclick="somar()">+ Somar</button>
+<button onclick="subtrai()">- Subtrair</button>
+<button onclick="multi()">* Multiplicar</button>
+<button onclick="dividir()">/ Dividir</button>
+<button onclick="limpar()">Limpar</button>
+<br><hr>
+<div id="output"></div>
+
+<script>
+//Perguntar o numero e converter
+var n1 = parseFloat(prompt("Digite um numero: "));
+
+escreve();
+
+
+function escreve(){
+    var output = document.querySelector("#output");
+    output.innerHTML = n1;
+};
+
+function somar(){
+    var n2 = parseInt(prompt("Digite outro numero: "))
+    n1 = n1 + n2;
+    escreve();
+};
+
+function subtrai(){
+    var n2 = parseInt(prompt("Digite outro numero: "))
+    n1 = n1 - n2;
+    escreve();
+};
+function multi(){
+    var n2 = parseInt(prompt("Digite outro numero: "))
+    n1 = n1 * n2;
+    escreve();
+};
+function dividir(){
+    var n2 = parseInt(prompt("Digite outro numero: "))
+    n1 = n1 / n2;
+    escreve();
+};
+function limpar() {
+    output.innerHTML = ""; 
+    mensagem = "";
+}
+
+</script>
+
+
+</body>
+</html>

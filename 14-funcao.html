@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função em JS</title>
+</head>
+<body>
+    <h1>Função em JS</h1>
+<p>Função void não retorna nenhum valor, mas são uteis no reaproveitamento de codigo.</p>
+    
+<button onclick="mostrarTabuada()">Criar tabuada</button>
+<button onclick="limparTabuada()">Limpar tabuada</button>
+
+<div id="output"></div>
+
+<script>
+function mostrarTabuada(){
+    //Perguntar o número e converter
+    var n = parseFloat(prompt("Digite o número:"));
+var i = 1;
+while(i <= 1000){
+    mensagem += n + " x " + i + " = " + (n * i) + "<br>";
+    i++;
+};
+output.innerHTML = mensagem;
+function limparTabuada() {
+output.innerHTML = ""; 
+mensagem = "";
+}
+
+}
+output = document.querySelector("#output");
+
+
+</script>
+
+</body>
+</html>
