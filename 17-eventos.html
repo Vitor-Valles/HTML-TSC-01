@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body onload="aoCarregar()">
+    <h1>Eventos</h1>
+Eventso são ações realizadas pelo usuário ou automaticamente pelo código.
+<p>Os eventos podem ser atribuidos a links, botões, head e mouse.</p>
+<p>Os eventos/comandos são: onClick, onMouseOVer, onMouseOut, onLoad, onMouseDown, onMouseUp e onFocus.</p>
+
+<form>
+<input type="button" value="onClick" onclick="alert('Você clicou em min!!!');">
+<input type="button" value="onMouseOver" onmouseover="alert('Você passou o mouse sobre mim!!!');">
+<input type="button" value="onMouseOut" onmouseout="alert('Você saiu do botão');">
+<input type="button" value="onMouseDown" onmousedown="alert('Você mantém pressionado');">
+<input type="button" value="onMouseUp" onmouseup="alert('Você usou outro botão');">
+<input type="button" value="onFocus" onfocus='alert("Você isso TAB");'>
+</form>
+
+<br><br>
+
+<p><a href="https://www.ctsdigital.com.br">Para o site do Sandromir</a></p>
+
+<a href="#" onclick="alert('Você clicou na imagem')">
+<img src="Imagens\logo-ctsdigital.png" width="600" >
+</a>
+<br><br>
+<script>
+function aoCarregar(){
+    alert("Seja bem-vindo!!");
+}
+
+
+</script>
+
+
+
+</body>
+</html>
